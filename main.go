@@ -1,6 +1,7 @@
 package main
 
 import (
+	"context"
 	"log"
 	"os"
 
@@ -15,4 +16,6 @@ func main() {
 	if apiKey == "" {
 		log.Fatal("Missing Api Key")
 	}
+
+	ctx:=context.Background()
 }
