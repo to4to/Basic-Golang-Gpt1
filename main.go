@@ -2,10 +2,10 @@ package main
 
 import (
 	"context"
+	"github.com/PullRequestInc/go-gpt3"
+	"github.com/joho/godotenv"
 	"log"
 	"os"
-
-	"github.com/joho/godotenv"
 )
 
 func main() {
@@ -17,5 +17,6 @@ func main() {
 		log.Fatal("Missing Api Key")
 	}
 
-	ctx:=context.Background()
+	ctx := context.Background()
+	client := gp3.NewClient(apiKey)
 }
