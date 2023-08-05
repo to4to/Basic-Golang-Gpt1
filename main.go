@@ -19,4 +19,7 @@ func main() {
 
 	ctx := context.Background()
 	client := gp3.NewClient(apiKey)
+
+
+	response,err:=client.Completion(ctx,gpt3.CompletionRequest{})
 }
