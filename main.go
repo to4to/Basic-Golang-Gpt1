@@ -2,10 +2,12 @@ package main
 
 import (
 	"context"
-	"github.com/PullRequestInc/go-gpt3"
-	"github.com/joho/godotenv"
+	"fmt"
 	"log"
 	"os"
+
+	"github.com/PullRequestInc/go-gpt3"
+	"github.com/joho/godotenv"
 )
 
 func main() {
@@ -28,4 +30,6 @@ func main() {
 	if err!=nil{
 		log.Fatal(err)
 	}
+
+	fmt.Println(response.)
 }
