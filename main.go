@@ -31,5 +31,5 @@ func main() {
 		log.Fatal(err)
 	}
 
-	fmt.Println(response.)
+	fmt.Println(response.Choices[0].Text)
 }
